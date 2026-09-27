@@ -14,7 +14,7 @@ For each user:
 ## Usage
 
 ```powershell
-. '.\Terminate_User_Script (1).ps1'
+. .\Invoke-UserOffboarding.ps1
 get-TerminationSessions
 Terminate_User -userUPN user@contoso.com -exportLogPath C:\ExportLogs -ConvertToShared $true -setAutoReply $true -Forwarding $true
 Terminate_UsersFromCSV -csvPath .\users.csv -exportLogPath C:\ExportLogs
@@ -22,7 +22,7 @@ Terminate_UsersFromCSV -csvPath .\users.csv -exportLogPath C:\ExportLogs
 
 CSV columns: UPN (required), DomainController, ManagerName, ManagerEmail, ConverToShared, SetAutoReply, ForwardEmail (Yes/No), ExcludedLicenseGroup, disabledGroupObjectID.
 
-Full details and known issues: `Get-Help '.\Terminate_User_Script (1).ps1' -Full`
+Full details and known issues: `Get-Help .\Invoke-UserOffboarding.ps1 -Full`
 
 ## Notes
 
