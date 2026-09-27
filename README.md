@@ -26,7 +26,6 @@ Full details and known issues: `Get-Help '.\Terminate_User_Script (1).ps1' -Full
 
 ## Notes
 
-- Requires the ActiveDirectory, AzureAD, MSOnline, ExchangeOnlineManagement and MicrosoftTeams modules. AzureAD and MSOnline are retired.
+- Requires the ActiveDirectory, AzureAD, MSOnline, ExchangeOnlineManagement and MicrosoftTeams modules.
 - Before use, adapt the domain-to-OU mapping in `Add-ADUserToDisabledOU` and the organisation name in `SetAutoReply`.
-- The changes cannot simply be undone. Test with a test account first.
 - Organization names are placeholders.
